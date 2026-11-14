@@ -10,14 +10,14 @@ as much as the code.
 
 ### Professional Experience
 
-| Years     | Role                         | Company           | Term      | 2005 → 2026              |
-| --------- | ---------------------------- | ----------------- | --------- | ------------------------ |
-| 2026      | Fullstack Engineer           | Ragdoll Dynamics  | contract  | `░░░░░░░░░░░░░░░░░░░░░█` |
-| 2019–2025 | Frontend Engineer II         | AWS               | full time | `░░░░░░░░░░░░░░███████░` |
-| 2018–2019 | Lead Frontend Engineer       | Nimble Collective | full time | `░░░░░░░░░░░░░██░░░░░░░` |
-| 2015–2016 | Technical Director           | BlueSky Studios   | contract  | `░░░░░░░░░░██░░░░░░░░░░` |
-| 2008–2018 | Founder & Fullstack Engineer | RGB Notes         | part time | `░░░███████████░░░░░░░░` |
-| 2005–2013 | Animator & Technical Liaison | Rhythm & Hues     | full time | `█████████░░░░░░░░░░░░░` |
+| Years     | Role                              | Company           | Term      | 2005 → 2026              |
+| --------- | --------------------------------- | ----------------- | --------- | ------------------------ |
+| 2026      | Fullstack Engineer                | Ragdoll Dynamics  | contract  | `░░░░░░░░░░░░░░░░░░░░░█` |
+| 2019–2025 | Frontend Engineer II              | AWS               | full time | `░░░░░░░░░░░░░░███████░` |
+| 2018–2019 | Lead Frontend Engineer            | Nimble Collective | full time | `░░░░░░░░░░░░░██░░░░░░░` |
+| 2015–2016 | Technical Director                | BlueSky Studios   | contract  | `░░░░░░░░░░██░░░░░░░░░░` |
+| 2008–2018 | Founder & Fullstack Engineer      | RGB Notes         | part time | `░░░███████████░░░░░░░░` |
+| 2005–2013 | Lead Animator & Technical Liaison | Rhythm & Hues     | full time | `█████████░░░░░░░░░░░░░` |
 
 ### Some things I build for fun
 
