@@ -72,6 +72,7 @@ nav.auto-hide.is-visible {
 }
 
 @media (prefers-reduced-motion: reduce) {
+
   nav.auto-hide,
   nav.auto-hide.is-visible {
     transition: none
@@ -87,7 +88,7 @@ nav .wrap {
 
 .brand {
   font-weight: 600;
-  font-size: 14px;
+  font-size: 20px;
   color: var(--white)
 }
 
@@ -302,6 +303,12 @@ h1 .sub {
 /* sections */
 section {
   padding: 32px 0
+}
+
+section.container {
+  padding: 2em 3em;
+  border: 1px solid #343434;
+  border-radius: 30px;
 }
 
 h2 {
