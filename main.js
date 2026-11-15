@@ -69,3 +69,50 @@ async function rotate(root) {
 const rotator = /** @type {HTMLElement | null} */ (document.querySelector('.rotator'));
 // Respect reduced-motion users: they keep the static first headline.
 if (rotator && !matchMedia('(prefers-reduced-motion: reduce)').matches) rotate(rotator);
+
+/** @typedef {{ src: string, href: string, caption: string }} LensItem */
+
+/**
+ * Renders the Instagram tiles from the committed lens/lens.json (see scripts/update-lens.mjs).
+ * The whole section stays hidden until the data exists (the script hasn't been run yet).
+ * @param {HTMLElement} grid
+ */
+async function loadLens(grid) {
+  const res = await fetch('lens/lens.json');
+  if (!res.ok) throw new Error(`lens.json: HTTP ${res.status}`);
+  /** @type {LensItem[]} */
+  const items = await res.json();
+  grid.replaceChildren(...items.map(({ src, href, caption }) => {
+    const a = document.createElement('a');
+    a.className = 'tile';
+    a.href = href;
+    a.target = '_blank';
+    a.rel = 'noopener';
+    const img = document.createElement('img');
+    img.src = src;
+    img.alt = caption;
+    img.loading = 'lazy';
+    a.append(img);
+    if (caption) {
+      const span = document.createElement('span');
+      span.textContent = caption;
+      a.append(span);
+    }
+    return a;
+  }));
+  const section = grid.closest('section');
+  if (section) section.hidden = items.length === 0;
+}
+
+const lens = /** @type {HTMLElement | null} */ (document.querySelector('.lens'));
+if (lens) loadLens(lens).catch(err => console.warn('Instagram section hidden; no lens data yet:', err));
+
+const nav = document.querySelector('nav');
+const navTrigger = document.getElementById('links');
+if (nav && navTrigger) {
+  nav.classList.add('auto-hide');
+  // Show the nav only once the hero links have scrolled off the top, not while they're still below the fold.
+  new IntersectionObserver(([e]) => {
+    nav.classList.toggle('is-visible', !e.isIntersecting && e.boundingClientRect.top < 0);
+  }).observe(navTrigger);
+}

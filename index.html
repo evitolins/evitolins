@@ -21,10 +21,10 @@
 
   <nav>
     <div class="wrap">
-      <a class="brand" href="#about">eriks-vitolins</a>
+      <a class="brand" href="#about">eriks vitolins</a>
       <div class="navlinks">
         <a class="hide-sm" href="#projects">Work</a>
-        <a class="hide-sm" href="https://github.com/evitolins">GitHub</a>
+        <a class="hide-sm" href="https://github.com/evitolins" target="_blank" rel="noopener">GitHub</a>
         <!-- TODO: point to your resume PDF -->
         <a class="btn" href="#">Resume</a>
       </div>
@@ -35,16 +35,18 @@
 
     <section id="about">
       <div class="hero-top">
-        <!-- TODO: swap initials for a photo: <img class="avatar" src="me.jpg" alt="Eriks Vitolins"> -->
-        <div class="avatar" aria-hidden="true">EV</div>
+        <img class="avatar" src="avatar.jpg" alt="Eriks Vitolins" width="88" height="88">
         <div class="id">
           <div class="name">Eriks Vitolins</div>
-          <div class="role">Senior Full Stack Engineer · UI/UX</div>
-          <div class="links">
-            <a href="https://github.com/evitolins">GitHub</a>
-            <a href="https://linkedin.com/in/eriks-vitolins">LinkedIn</a>
-            <a href="https://eriksssss.com">Site</a>
-            <span class="avail">Available</span>
+          <div class="role">
+            <p>Senior Full Stack Engineer · UI/UX</p>
+            <p>Los Angeles | Remote</p>
+          </div>
+          <div class="links" id="links">
+            <a href="https://github.com/evitolins" target="_blank" rel="noopener">GitHub</a>
+            <a href="https://linkedin.com/in/eriks-vitolins" target="_blank" rel="noopener">LinkedIn</a>
+            <a class="btn-small" href="" target="_blank" rel="noopener">Resume</a>
+            <span class="avail">Open to work</span>
           </div>
         </div>
       </div>
@@ -68,10 +70,11 @@
         frontend at AWS, and now agentic AI tooling. I take products from first idea through launch, scaling and sale,
         and I weigh budget, scope and results alongside the code.</p>
 
-      <div class="deep">deep in →
-        <a class="chip" href="#projects">Agent tooling</a>
-        <a class="chip" href="#projects">Doc collaboration</a>
+      <div class="deep">🧠 currently into →
+        <a class="chip" href="#projects">Agent workflow & tooling</a>
+        <a class="chip" href="#projects">Developer/Agent UX design</a>
         <a class="chip" href="#projects">Creative tools</a>
+        <a class="chip" href="#projects">Stable Diffusion</a>
       </div>
     </section>
 
@@ -80,7 +83,7 @@
       <div class="stats">
         <div class="stat">
           <div class="n">20+</div>
-          <div class="l">years in industry</div>
+          <div class="l">years as a developer</div>
           <div class="q">since 2005</div>
         </div>
         <div class="stat">
@@ -96,7 +99,7 @@
         <div class="stat">
           <div class="n">3</div>
           <div class="l">studios</div>
-          <div class="q">R&amp;H · Blue Sky · Nimble</div>
+          <div class="q">R&amp;H · BlueSky · Nimble</div>
         </div>
       </div>
     </section>
@@ -105,59 +108,81 @@
       <h2>Timeline</h2>
       <div class="timeline">
         <div class="t"><span class="yr">2026</span>
-          <div class="head">Fullstack Engineer <em>@Ragdoll Dynamics</em><span class="now">contract</span></div>
-          <p>Took over undocumented beta software and rebuilt the customer portal and license management system from the
+          <div class="head">Free-range Fullstack Engineer</div>
+          <p>Currently exploring new freelance, employment and/or entrepreneurial opportunities -- all while continuing
+            to modernize and streamline my personal development workflows via the changing world of agentic-assisted
+            development.</p>
+          <p>I'm interested in developing scalable workflows that streamline the interactions between
+            developers, agents and stakeholders to drive intentional results at FAANG-level quality.</p>
+        </div>
+        <div class="t"><span class="yr">2026</span>
+          <div class="head">Fullstack Engineer <em>@ Ragdoll Dynamics</em><span class="now"
+              style="color:var(--dim)">(contract)</span></div>
+          <p>Spring 2026. Took over undocumented beta software and rebuilt the customer portal and license management
+            system from the
             ground up: API design, one-time and subscription products, Stripe-backed licensing, OAuth. Full-stack
             TypeScript with agent-assisted development.</p>
         </div>
         <div class="t"><span class="yr">2019</span>
-          <div class="head">Frontend Engineer II <em>@AWS</em></div>
+          <div class="head">Frontend Engineer II <em>@ AWS</em></div>
           <p>2019–2025. Six years shipping frontend at scale; formed new initiatives and solved department-level
             problems for measurable gains.</p>
         </div>
         <div class="t"><span class="yr">2018</span>
-          <div class="head">Lead Frontend Engineer <em>@Nimble Collective</em></div>
+          <div class="head">Lead Frontend Engineer <em>@ Nimble Collective</em></div>
           <p>2018–2019. Led frontend for a cloud-based animation production platform.</p>
         </div>
         <div class="t"><span class="yr">2015</span>
-          <div class="head">Technical Director <em>@Blue Sky Studios</em><span class="now"
-              style="color:var(--dim)">contract</span></div>
+          <div class="head">Technical Director <em>@ BlueSky Studios</em><span class="now"
+              style="color:var(--dim)">(contract)</span></div>
           <p>2015–2016. Technical direction for feature animation.</p>
         </div>
         <div class="t"><span class="yr">2008</span>
-          <div class="head">Founder &amp; Fullstack Engineer <em>@RGB Notes</em></div>
+          <div class="head">Founder &amp; Fullstack Engineer <em>@ RGB Notes</em></div>
           <p>2008–2018. Founded and ran a SaaS product end to end — design, engineering, launch and growth.</p>
         </div>
         <div class="t" style="padding-bottom:0"><span class="yr">2005</span>
-          <div class="head">Animator &amp; Technical Liaison <em>@Rhythm &amp; Hues</em></div>
-          <p>2005–2013. Feature-film animation, bridging artists and the technical pipeline.</p>
+          <div class="head">Lead Animator &amp; Technical Liaison <em>@ Rhythm &amp; Hues Studios</em></div>
+          <p>2005–2013. Feature-film character animation, bridging artists and the technical workflows and pipeline.</p>
         </div>
       </div>
     </section>
 
     <section id="projects" class="reveal">
-      <h2>Selected work</h2>
+      <h2>Selected personal work</h2>
       <div class="work">
         <div class="proj">
-          <h3><a href="https://github.com/evitolins/mark">Mark</a> <span class="badge">open source soon</span></h3>
+          <h3><a href="https://github.com/evitolins/mark" target="_blank" rel="noopener">Mark</a> <span
+              class="badge">open source soon</span></h3>
           <p>Markdown document collaboration between developers and agents: browser UI for humans, a CLI for agents, and
             a claim/release ownership model so neither steps on the other. Implements a formal developer–agent review UX
             on the MAFL format, with a Claude Code plugin integration and a harness-agnostic design.</p>
           <div class="meta">TypeScript · CLI · Claude Code · Agent workflows</div>
         </div>
         <div class="proj">
-          <h3><a href="https://github.com/evitolins/canvas-highlight">Canvas Highlight</a> <a class="badge"
-              href="https://evitolins.github.io/canvas-highlight/">demo ↗</a></h3>
-          <p>Custom ComfyUI nodes that turn character sheets and storyboards into 2D animation frames, bringing
-            production-pipeline thinking to generative tools.</p>
-          <div class="meta">ComfyUI · Diffusion models · Local inference</div>
+          <h3><a href="https://github.com/evitolins/canvas-highlight" target="_blank" rel="noopener">Canvas
+              Highlight</a> <a class="badge" href="https://evitolins.github.io/canvas-highlight/" target="_blank"
+              rel="noopener">demo ↗</a></h3>
+          <p>A React component that draws realistic highlighter, marker and pen strokes over HTML text on a canvas
+            overlay — driven by plain <code>&lt;mark&gt;</code> tags or by Range objects from search, selection or NLP.
+          </p>
+          <div class="meta">React · TypeScript · Canvas 2D · npm</div>
         </div>
         <div class="proj">
-          <h3><a href="https://github.com/evitolins/fm-node-synth">FM Node Synth</a> <a class="badge"
-              href="https://evitolins.github.io/fm-node-synth/">demo ↗</a></h3>
+          <h3><a href="https://github.com/evitolins/fm-node-synth" target="_blank" rel="noopener">FM Node Synth</a> <a
+              class="badge" href="https://evitolins.github.io/fm-node-synth/" target="_blank" rel="noopener">demo ↗</a>
+          </h3>
           <p>A DX7-inspired FM synthesizer built as a node graph — patch operators visually and hear the result live.
           </p>
-          <div class="meta">Web Audio · TypeScript · Node editor</div>
+          <div class="meta">Web Audio · TypeScript · Node editor · MIDI</div>
+        </div>
+        <div class="proj">
+          <h3><a href="https://github.com/evitolins/comfy-sprite-select" target="_blank" rel="noopener">Comfy Sprite
+              Select</a></h3>
+          <p>A ComfyUI custom node for pulling a single frame out of a sprite sheet: click a cell in the grid overlaid
+            on
+            the image, preview the crop live, and send it downstream.</p>
+          <div class="meta">ComfyUI · Custom node · TypeScript · Canvas · Python</div>
         </div>
       </div>
     </section>
@@ -168,19 +193,19 @@
       <div class="stack">
         <div>
           <h4>Languages</h4>
-          <p>TypeScript, JavaScript</p>
+          <p>TypeScript, JavaScript, Python, PHP, CSS, HTML</p>
         </div>
         <div>
           <h4>AI / Agents</h4>
-          <p>Claude Code, agent workflows, plugins, ComfyUI</p>
+          <p>Claude Code (Skills, Hooks, Plugins, MCP dev), Ollama, LM Studio, agent workflows, ComfyUI</p>
         </div>
         <div>
           <h4>Backend</h4>
-          <p>Node.js, Fastify, OpenAPI, OAuth</p>
+          <p>Node.js, Django, Flask, Fastify, OpenAPI, OAuth, PostgreSQL</p>
         </div>
         <div>
           <h4>Frontend</h4>
-          <p>React, Web Audio, design systems</p>
+          <p>React, Tanstack, Zustand, Web Audio, design systems</p>
         </div>
         <div>
           <h4>Payments</h4>
@@ -188,39 +213,34 @@
         </div>
         <div>
           <h4>Infra</h4>
-          <p>Docker, AWS</p>
+          <p>Docker, AWS (EC2, S3, Lambda, Step Functions, CloudFront, CloudWatch CloudFormation, CDK)</p>
         </div>
       </div>
     </section>
 
-    <section id="lens" class="reveal">
-      <h2>Through the lens <a href="https://www.instagram.com/eriksssssssss">Instagram ↗</a></h2>
-      <!-- TODO: when hosting, save 3 favorite posts as lens-1.jpg … lens-3.jpg next to this file
-         and they will replace the placeholder tiles automatically. Edit the captions to match. -->
-      <div class="lens">
-        <a class="tile" href="https://www.instagram.com/eriksssssssss"><img src="lens-1.jpg" alt=""
-            onerror="this.remove()"><span>Caption one</span></a>
-        <a class="tile" href="https://www.instagram.com/eriksssssssss"><img src="lens-2.jpg" alt=""
-            onerror="this.remove()"><span>Caption two</span></a>
-        <a class="tile" href="https://www.instagram.com/eriksssssssss"><img src="lens-3.jpg" alt=""
-            onerror="this.remove()"><span>Caption three</span></a>
-      </div>
-      <a class="ghost" style="display:inline-block;margin-top:16px"
-        href="https://www.instagram.com/eriksssssssss">Follow @eriksssssssss</a>
+    <!-- Instagram section, disabled until lens/ is populated: run scripts/update-lens.mjs, commit lens/, then uncomment.
+         main.js fills .lens from lens/lens.json and reveals the section once there are posts to show.
+    <section id="lens" class="reveal" hidden>
+      <h2>Through the lens <a href="https://www.instagram.com/eriksssssssss" target="_blank" rel="noopener">Instagram
+          ↗</a></h2>
+      <div class="lens"></div>
+      <a class="ghost" style="display:inline-block;margin-top:16px" href="https://www.instagram.com/eriksssssssss"
+        target="_blank" rel="noopener">Follow @eriksssssssss</a>
     </section>
+    -->
 
     <div class="rule"></div>
 
     <section id="contact" class="reveal">
-      <h3>Looking for the next hard problem.</h3>
+      <h3>Looking for interesting problems to solve.</h3>
       <p>Open to senior IC and founding/lead engineer roles — agent and developer tools, AI creative tools, docs and
         collaboration, or real-time 3D. Los Angeles or remote, full-time or contract-to-hire.</p>
       <div class="cta">
-        <!-- TODO: replace with your email -->
-        <a class="btn" href="mailto:you@example.com">Email me</a>
-        <a class="ghost" href="https://calendar.app.google/8HnrpErAaAxgwhsE7">Book a call ↗</a>
-        <a class="ghost" href="https://linkedin.com/in/eriks-vitolins">LinkedIn ↗</a>
-        <a class="ghost" href="https://github.com/evitolins">GitHub ↗</a>
+        <a class="btn" href="mailto:evitolins@gmail.com">evitolins@gmail.com</a>
+        <a class="ghost" href="https://calendar.app.google/8HnrpErAaAxgwhsE7" target="_blank" rel="noopener">Book a call
+          ↗</a>
+        <a class="ghost" href="https://linkedin.com/in/eriks-vitolins" target="_blank" rel="noopener">LinkedIn ↗</a>
+        <a class="ghost" href="https://github.com/evitolins" target="_blank" rel="noopener">GitHub ↗</a>
       </div>
     </section>
 
@@ -230,10 +250,10 @@
     <div class="wrap">
       <span>© 2026 Eriks Vitolins</span>
       <div class="fl">
-        <a href="https://github.com/evitolins">GitHub</a>
-        <a href="https://linkedin.com/in/eriks-vitolins">LinkedIn</a>
-        <a href="https://www.instagram.com/eriksssssssss">Instagram</a>
-        <a href="https://eriksssss.com">eriksssss.com</a>
+        <a href="https://github.com/evitolins" target="_blank" rel="noopener">GitHub</a>
+        <a href="https://linkedin.com/in/eriks-vitolins" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="https://www.instagram.com/eriksssssssss" target="_blank" rel="noopener">Instagram</a>
+        <a href="https://eriksssss.com" target="_blank" rel="noopener">eriksssss.com</a>
       </div>
     </div>
   </footer>

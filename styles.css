@@ -23,6 +23,8 @@ html {
 
 body {
   background: var(--bg);
+  /* background: rgb(22 22 24);
+  background: linear-gradient(355deg, rgb(22 22 24) 0%, rgb(43 43 43) 100%); */
   color: var(--fg);
   font-family: Geist, system-ui, sans-serif;
   font-size: 16px;
@@ -49,6 +51,31 @@ nav {
   background: rgba(10, 10, 10, .85);
   backdrop-filter: blur(10px);
   border-bottom: 1px solid #141414
+}
+
+/* main.js adds .auto-hide, so without JS the nav simply stays put.
+   Fixed (not sticky) so the hidden nav doesn't leave an empty band above the hero. */
+nav.auto-hide {
+  position: fixed;
+  left: 0;
+  right: 0;
+  transform: translateY(-100%);
+  /* visibility keeps hidden links out of the tab order; it flips only after the slide finishes */
+  visibility: hidden;
+  transition: transform .35s ease, visibility 0s .35s
+}
+
+nav.auto-hide.is-visible {
+  transform: none;
+  visibility: visible;
+  transition: transform .35s ease, visibility 0s
+}
+
+@media (prefers-reduced-motion: reduce) {
+  nav.auto-hide,
+  nav.auto-hide.is-visible {
+    transition: none
+  }
 }
 
 nav .wrap {
@@ -88,6 +115,20 @@ nav .wrap {
   background: #e5e7eb
 }
 
+.btn-small {
+  background: var(--white);
+  color: #000 !important;
+  padding: 0 6px;
+  border-radius: 6px;
+  font-weight: 500
+}
+
+.btn-small:hover {
+  background: #3b3c3c;
+  color: #fff !important;
+
+}
+
 /* hero */
 #about {
   padding: 56px 0 40px
@@ -112,7 +153,8 @@ nav .wrap {
   font-size: 28px;
   color: #e4e4e7;
   letter-spacing: -.5px;
-  border: 1px solid #2a2a2a
+  border: 1px solid #2a2a2a;
+  object-fit: cover
 }
 
 .id {
@@ -135,7 +177,8 @@ nav .wrap {
   gap: 14px;
   justify-content: flex-end;
   font-size: 13px;
-  color: var(--muted)
+  color: var(--muted);
+  margin-top: 22px;
 }
 
 .id .links a:hover {
@@ -377,6 +420,11 @@ h2 a {
   font-size: 14px;
   color: var(--muted);
   margin: 6px 0
+}
+
+.proj code {
+  font-family: "Geist Mono", ui-monospace, monospace;
+  font-size: .92em
 }
 
 .meta {
