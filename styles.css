@@ -413,9 +413,9 @@ h2 a {
   align-items: center
 }
 
-.proj h3 a:hover {
-  text-decoration: underline;
-  text-underline-offset: 3px
+a.badge:hover {
+  color: var(--white);
+  border-color: #444
 }
 
 .proj p {
