@@ -137,9 +137,8 @@ nav .wrap {
 
 .hero-top {
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  gap: 24px;
+  gap: 20px;
   margin-bottom: 28px
 }
 
@@ -158,10 +157,6 @@ nav .wrap {
   object-fit: cover
 }
 
-.id {
-  text-align: right
-}
-
 .id .name {
   font-weight: 600;
   color: var(--white)
@@ -173,16 +168,16 @@ nav .wrap {
   margin: 6px 0 10px
 }
 
-.id .links {
+.hero-top .links {
   display: flex;
+  align-items: center;
   gap: 14px;
-  justify-content: flex-end;
+  margin-left: auto;
   font-size: 13px;
-  color: var(--muted);
-  margin-top: 22px;
+  color: var(--muted)
 }
 
-.id .links a:hover {
+.hero-top .links a:hover {
   color: var(--white)
 }
 
@@ -590,17 +585,14 @@ footer .fl {
     font-size: 28px
   }
 
+  /* avatar and name stay side by side; the links drop to their own row */
   .hero-top {
-    flex-direction: column;
-    align-items: flex-start
+    flex-wrap: wrap
   }
 
-  .id {
-    text-align: left
-  }
-
-  .id .links {
-    justify-content: flex-start
+  .hero-top .links {
+    flex-basis: 100%;
+    margin-left: 0
   }
 
   .stats {
